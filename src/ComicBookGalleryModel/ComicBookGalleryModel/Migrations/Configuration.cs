@@ -30,8 +30,8 @@ namespace ComicBookGalleryModel.Migrations
 
             context.Artists.AddOrUpdate(
                 a => a.Id,
-                new Artist() { Id = artistIdStanLee, Name = "Stan Lee" },
-                new Artist() { Id = artistIdSteveDitko, Name = "Steve Ditko" }
+                new Artist() { Id = artistIdStanLee, Name = "Stan Lee", Bio = "TBD" },
+                new Artist() { Id = artistIdSteveDitko, Name = "Steve Ditko", Bio = "TBD" }
             );
 
             const int seriesIdSpiderMan = 1;
