@@ -24,6 +24,7 @@ namespace ComicBookGalleryModel.Migrations
                 new Role() { Id = roleIdPencils, Name = "Pencils" }
             );
 
+#if DEBUG
             const int artistIdStanLee = 1;
             const int artistIdSteveDitko = 2;
 
@@ -95,6 +96,7 @@ namespace ComicBookGalleryModel.Migrations
                 cb => cb.Id,
                 comicBook3
             );
+#endif
         }
     }
 }
