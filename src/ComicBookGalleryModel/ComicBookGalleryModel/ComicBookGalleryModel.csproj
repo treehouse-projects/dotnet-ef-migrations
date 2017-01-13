@@ -71,10 +71,15 @@
     <Compile Include="Migrations\201701132031115_AddBioPropertyToArtist.Designer.cs">
       <DependentUpon>201701132031115_AddBioPropertyToArtist.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701132306266_AddComicBookAverageRatingEntity.cs" />
+    <Compile Include="Migrations\201701132306266_AddComicBookAverageRatingEntity.Designer.cs">
+      <DependentUpon>201701132306266_AddComicBookAverageRatingEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\ComicBook.cs" />
     <Compile Include="Models\ComicBookArtist.cs" />
+    <Compile Include="Models\ComicBookAverageRating.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\Series.cs" />
     <Compile Include="Program.cs" />
@@ -90,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701132031115_AddBioPropertyToArtist.resx">
       <DependentUpon>201701132031115_AddBioPropertyToArtist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701132306266_AddComicBookAverageRatingEntity.resx">
+      <DependentUpon>201701132306266_AddComicBookAverageRatingEntity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

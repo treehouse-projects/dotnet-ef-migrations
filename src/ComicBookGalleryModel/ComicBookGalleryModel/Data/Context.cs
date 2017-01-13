@@ -28,7 +28,7 @@ namespace ComicBookGalleryModel.Data
 
             // Using the fluent API to configure the precision and scale
             // for the ComicBook.AverageRating property.
-            modelBuilder.Entity<ComicBook>()
+            modelBuilder.Entity<ComicBookAverageRating>()
                 .Property(cb => cb.AverageRating)
                 .HasPrecision(5, 2);
         }

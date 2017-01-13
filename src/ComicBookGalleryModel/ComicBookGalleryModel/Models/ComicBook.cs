@@ -11,6 +11,7 @@ namespace ComicBookGalleryModel.Models
         public ComicBook()
         {
             Artists = new List<ComicBookArtist>();
+            AverageRatings = new List<ComicBookAverageRating>();
         }
 
         public int Id { get; set; }
@@ -18,10 +19,10 @@ namespace ComicBookGalleryModel.Models
         public int IssueNumber { get; set; }
         public string Description { get; set; }
         public DateTime PublishedOn { get; set; }
-        public decimal? AverageRating { get; set; }
 
         public Series Series { get; set; }
         public ICollection<ComicBookArtist> Artists { get; set; }
+        public ICollection<ComicBookAverageRating> AverageRatings { get; set; }
 
         /// <summary>
         /// The display text for a comic book.
